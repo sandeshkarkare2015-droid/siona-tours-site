@@ -55,6 +55,7 @@
   }
   .faq-item h3 { font-size: 1rem; margin-bottom: 8px; }
   .faq-item p { color: var(--color-muted); font-size: 0.9rem; }
+  .package-select { font-size: 0.9rem; }
 </style>
 </head>
 <body>
@@ -120,10 +121,9 @@
             <input type="email" id="email" name="email" placeholder="you@example.com" />
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="package">Package You're Interested In</label>
-              <select id="package" name="package">
+          <div class="form-group">
+            <label for="package">Package You're Interested In</label>
+            <select id="package" name="package" class="package-select">
                 <option value="">Select a package (optional)</option>
                 <optgroup label="Kashmir & Ladakh">
                   <option>Kashmir Valley Escape (4N/5D)</option>
@@ -175,24 +175,25 @@
                   <option>Bhutan Himalayan Escape (3N/4D)</option>
                 </optgroup>
                 <option value="Not sure yet — need recommendations">Not sure yet — need recommendations</option>
-              </select>
-            </div>
+            </select>
+          </div>
+
+          <div class="form-row">
             <div class="form-group">
               <label for="travellers">Number of Travellers</label>
               <input type="text" id="travellers" name="travellers" placeholder="e.g. 4 Adults, 2 Children" />
             </div>
-          </div>
-
-          <div class="form-group">
-            <label for="month">Preferred Travel Month</label>
-            <select id="month" name="month">
-              <option value="">Select a month (optional)</option>
-              <option>January</option><option>February</option><option>March</option>
-              <option>April</option><option>May</option><option>June</option>
-              <option>July</option><option>August</option><option>September</option>
-              <option>October</option><option>November</option><option>December</option>
-              <option>Flexible / Not decided yet</option>
-            </select>
+            <div class="form-group">
+              <label for="month">Preferred Travel Month</label>
+              <select id="month" name="month">
+                <option value="">Select a month (optional)</option>
+                <option>January</option><option>February</option><option>March</option>
+                <option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option>
+                <option>October</option><option>November</option><option>December</option>
+                <option>Flexible / Not decided yet</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
