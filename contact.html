@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us | Siona Tours</title>
+<meta name="description" content="Get in touch with Siona Tours to plan your next group holiday. Send an enquiry and continue the conversation on WhatsApp." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .contact-split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: flex-start;
+  }
+  @media (max-width: 900px) { .contact-split { grid-template-columns: 1fr; } }
+  .contact-form-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-sm);
+  }
+  @media (max-width: 560px) { .contact-form-card { padding: 26px; } }
+  .contact-info-card {
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+  }
+  .contact-info-card h3 { margin-bottom: 10px; }
+  .contact-info-card p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 0.95rem; }
+  .contact-info-list li {
+    display: flex; align-items: flex-start; gap: 14px;
+    margin-bottom: 22px; font-size: 0.92rem;
+  }
+  .contact-info-list li svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px; color: #ffcda8; }
+  .contact-info-list strong { display: block; margin-bottom: 2px; }
+  .contact-info-list span { color: rgba(255,255,255,0.8); }
+  .contact-info-card .btn { margin-top: 8px; }
+  .contact-hours {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--color-border);
+    padding: 22px 0;
+  }
+  .faq-item h3 { font-size: 1rem; margin-bottom: 8px; }
+  .faq-item p { color: var(--color-muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">ST</span>
+      <span class="logo-text">Siona Tours<span>Group Tours &amp; Holidays</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="tour-packages.html">Tour Packages</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn btn-whatsapp btn-sm" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">
+        <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 22a10 10 0 0 1-5.1-1.39l-.37-.22-4.56 1.04 1.07-4.44-.24-.38A9.94 9.94 0 0 1 6 15.02C6 9.5 10.5 5 16.02 5c5.5 0 10 4.5 10 10.02S21.52 25 16.02 25zm5.4-7.44c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+        <span>Enquire on WhatsApp</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ===== Page Hero ===== -->
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80')">
+  <div class="container">
+    <span class="section-tag">Let's Plan Your Trip</span>
+    <h1>Contact Us</h1>
+    <p>Fill in a few details and we'll continue the conversation with you on WhatsApp — quick, simple, no back-and-forth emails.</p>
+    <div class="breadcrumb"><a href="index.html" style="color:#fff">Home</a><span>/</span><span>Contact</span></div>
+  </div>
+</section>
+
+<!-- ===== Contact Form + Info ===== -->
+<section>
+  <div class="container">
+    <div class="contact-split">
+
+      <div class="contact-form-card reveal">
+        <h2 style="margin-bottom:8px;">Send an Enquiry</h2>
+        <p style="color:var(--color-muted); margin-bottom:28px; font-size:0.92rem;">Submitting this form opens WhatsApp with your details pre-filled — just hit send.</p>
+
+        <form id="enquiryForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp Number *</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="+91 98765 43210" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="package">Package You're Interested In</label>
+              <select id="package" name="package">
+                <option value="">Select a package (optional)</option>
+                <optgroup label="Kashmir & Ladakh">
+                  <option>Kashmir Valley Escape (4N/5D)</option>
+                  <option>Kashmir Grand Experience (5N/6D)</option>
+                  <option>Ladakh Himalayan Escape (5N/6D)</option>
+                  <option>Ladakh Grand Himalayan Expedition (7N/8D)</option>
+                </optgroup>
+                <optgroup label="Himachal & Uttarakhand">
+                  <option>Manali Snow & Adventure (3N/4D)</option>
+                  <option>Shimla–Manali Himalayan Escape (5N/6D)</option>
+                  <option>Dharamshala–Dalhousie Himalayan Retreat (4N/5D)</option>
+                  <option>Spiti Valley Ultimate Expedition (6N/7D)</option>
+                  <option>Mussoorie–Rishikesh Divine Escape (4N/5D)</option>
+                  <option>Nainital–Corbett Nature Escape (4N/5D)</option>
+                </optgroup>
+                <optgroup label="Rajasthan & Golden Triangle">
+                  <option>Royal Rajasthan Escape (3N/4D)</option>
+                  <option>Rajasthan Heritage Trail (5N/6D)</option>
+                  <option>Rajasthan Grand Royal Tour (6N/7D)</option>
+                </optgroup>
+                <optgroup label="Kerala & South India">
+                  <option>Kerala Quick Escape (3N/4D)</option>
+                  <option>Kerala Scenic Escape (4N/5D)</option>
+                  <option>Kerala Backwater & Hills (5N/6D)</option>
+                  <option>God's Own Kerala Experience (6N/7D)</option>
+                  <option>Mysore–Coorg Green Escape (3N/4D)</option>
+                  <option>Ooty–Mysore–Coorg South India Escape (5N/6D)</option>
+                </optgroup>
+                <optgroup label="Goa, Andaman & Beaches">
+                  <option>Goa Beach Escape (2N/3D)</option>
+                  <option>Goa Fun & Fiesta (3N/4D)</option>
+                  <option>Goa Ultimate Getaway (4N/5D)</option>
+                  <option>Andaman Island Escape (4N/5D)</option>
+                  <option>Andaman Island Explorer (5N/6D)</option>
+                </optgroup>
+                <optgroup label="Northeast India">
+                  <option>Darjeeling–Gangtok Himalayan Escape (4N/5D)</option>
+                  <option>Gangtok–Pelling–Darjeeling Himalayan Trail (6N/7D)</option>
+                  <option>Meghalaya Cloudland Escape (4N/5D)</option>
+                  <option>Meghalaya–Kaziranga Wild & Green Escape (5N/6D)</option>
+                </optgroup>
+                <optgroup label="International Destinations">
+                  <option>Dubai City & Desert Escape (4N/5D)</option>
+                  <option>Bali Tropical Escape (4N/5D)</option>
+                  <option>Singapore City Escape (3N/4D)</option>
+                  <option>Bangkok–Pattaya Fun Escape (4N/5D)</option>
+                  <option>Maldives Tropical Paradise (3N/4D)</option>
+                  <option>Nepal Himalayan Escape (5N/6D)</option>
+                  <option>Bhutan Himalayan Escape (3N/4D)</option>
+                </optgroup>
+                <option value="Not sure yet — need recommendations">Not sure yet — need recommendations</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="travellers">Number of Travellers</label>
+              <input type="text" id="travellers" name="travellers" placeholder="e.g. 4 Adults, 2 Children" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="month">Preferred Travel Month</label>
+            <select id="month" name="month">
+              <option value="">Select a month (optional)</option>
+              <option>January</option><option>February</option><option>March</option>
+              <option>April</option><option>May</option><option>June</option>
+              <option>July</option><option>August</option><option>September</option>
+              <option>October</option><option>November</option><option>December</option>
+              <option>Flexible / Not decided yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us anything else — budget range, special occasions, preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-block">
+            <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 22a10 10 0 0 1-5.1-1.39l-.37-.22-4.56 1.04 1.07-4.44-.24-.38A9.94 9.94 0 0 1 6 15.02C6 9.5 10.5 5 16.02 5c5.5 0 10 4.5 10 10.02S21.52 25 16.02 25zm5.4-7.44c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+            Send via WhatsApp
+          </button>
+          <p class="form-note">We'll never spam you. Your enquiry opens a WhatsApp chat directly with our travel team.</p>
+        </form>
+      </div>
+
+      <div class="reveal">
+        <div class="contact-info-card">
+          <h3>Prefer to Chat Directly?</h3>
+          <p>Skip the form and message our travel team on WhatsApp right now — we usually reply within minutes.</p>
+          <a href="#" class="btn btn-light btn-block" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">Chat on WhatsApp</a>
+
+          <ul class="contact-info-list" style="margin-top:32px;">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3z" transform="scale(0.7)"/></svg>
+              <div><strong>WhatsApp</strong><span>+91 94047 35713</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><strong>Based In</strong><span>India — serving travellers nationwide</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <div><strong>Response Time</strong><span>Usually within 30 minutes</span></div>
+            </li>
+          </ul>
+
+          <div class="contact-hours">
+            Available all week, 9:00 AM – 9:00 PM IST for enquiries on WhatsApp.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="why-us">
+  <div class="container" style="max-width:800px;">
+    <div class="section-head center reveal">
+      <span class="section-tag">Quick Answers</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="reveal">
+      <div class="faq-item">
+        <h3>How do I get pricing for a package?</h3>
+        <p>Pricing depends on group size, travel dates and hotel category, so we share it directly on WhatsApp once we understand your requirements — just enquire and we'll respond quickly.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I see the full day-by-day itinerary before booking?</h3>
+        <p>Yes — full itineraries are shared over WhatsApp so you can review every detail before confirming.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you customise packages for smaller or larger groups?</h3>
+        <p>Absolutely. Every package can be tailored to your group size, budget and preferences — tell us your needs on WhatsApp.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the best way to reach you?</h3>
+        <p>WhatsApp is fastest. Use the form above, the floating WhatsApp button, or message +91 94047 35713 directly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">ST</span>
+          <span class="logo-text">Siona Tours</span>
+        </a>
+        <p>Group tours and holiday packages across India's most loved destinations and select international escapes. Full itineraries shared on WhatsApp.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.7C16.4 3.65 15.4 3.55 14.25 3.55c-2.4 0-4.05 1.47-4.05 4.15V9.9H7.5V13h2.7v8h3.3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33m0 2.16c-3.17 0-3.5.01-4.74.07-.98.04-1.5.21-1.86.34-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.13.36-.3.88-.34 1.86-.06 1.24-.07 1.57-.07 4.74s.01 3.5.07 4.74c.04.98.21 1.5.34 1.86.18.47.4.8.75 1.15s.68.57 1.15.75c.36.13.88.3 1.86.34 1.24.06 1.57.07 4.74.07s3.5-.01 4.74-.07c.98-.04 1.5-.21 1.86-.34.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.13-.36.3-.88.34-1.86.06-1.24.07-1.57.07-4.74s-.01-3.5-.07-4.74c-.04-.98-.21-1.5-.34-1.86a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.36-.13-.88-.3-1.86-.34-1.24-.06-1.57-.07-4.74-.07M12 6.87A5.13 5.13 0 1 1 6.87 12 5.13 5.13 0 0 1 12 6.87m0 2.16A2.97 2.97 0 1 0 14.97 12 2.97 2.97 0 0 0 12 9.03m6.4-2.4a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour-packages.html">Tour Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Regions</h4>
+        <ul>
+          <li><a href="tour-packages.html#kashmir-ladakh">Kashmir &amp; Ladakh</a></li>
+          <li><a href="tour-packages.html#himachal-uttarakhand">Himachal &amp; Uttarakhand</a></li>
+          <li><a href="tour-packages.html#kerala-south-india">Kerala &amp; South India</a></li>
+          <li><a href="tour-packages.html#goa-andaman">Goa &amp; Andaman</a></li>
+          <li><a href="tour-packages.html#international">International</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3z" transform="scale(0.7)"/></svg>
+            <a href="#" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">+91 94047 35713 (WhatsApp)</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>India | Group Tours &amp; Holidays</span>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-whatsapp btn-sm btn-block" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">Chat With Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Siona Tours. All rights reserved.</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="wa-float" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 22a10 10 0 0 1-5.1-1.39l-.37-.22-4.56 1.04 1.07-4.44-.24-.38A9.94 9.94 0 0 1 6 15.02C6 9.5 10.5 5 16.02 5c5.5 0 10 4.5 10 10.02S21.52 25 16.02 25zm5.4-7.44c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tour Packages | Siona Tours — Kashmir, Ladakh, Rajasthan, Kerala, Goa & More</title>
+<meta name="description" content="Browse Siona Tours' full range of group tour packages across Kashmir & Ladakh, Himachal & Uttarakhand, Rajasthan, Kerala & South India, Goa & Andaman, Northeast India and international destinations." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .region-nav {
+    position: sticky;
+    top: var(--header-height);
+    z-index: 400;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+  }
+  .region-nav .container {
+    display: flex;
+    gap: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .region-nav a {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: var(--radius-full);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    transition: background var(--transition), color var(--transition), border-color var(--transition);
+  }
+  .region-nav a:hover,
+  .region-nav a.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+  }
+  .region-section {
+    padding: 72px 0;
+    scroll-margin-top: calc(var(--header-height) + 64px);
+  }
+  .region-section:nth-child(even) {
+    background: var(--color-surface);
+  }
+  .region-section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .region-section-head h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  .region-section-head p {
+    color: var(--color-muted);
+    max-width: 520px;
+  }
+  .region-count {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    background: rgba(194, 65, 12, 0.08);
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">ST</span>
+      <span class="logo-text">Siona Tours<span>Group Tours &amp; Holidays</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="tour-packages.html" class="active">Tour Packages</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="btn btn-whatsapp btn-sm" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">
+        <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 22a10 10 0 0 1-5.1-1.39l-.37-.22-4.56 1.04 1.07-4.44-.24-.38A9.94 9.94 0 0 1 6 15.02C6 9.5 10.5 5 16.02 5c5.5 0 10 4.5 10 10.02S21.52 25 16.02 25zm5.4-7.44c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+        <span>Enquire on WhatsApp</span>
+      </a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ===== Page Hero ===== -->
+<section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1920&q=80')">
+  <div class="container">
+    <span class="section-tag">28+ Curated Itineraries</span>
+    <h1>Tour Packages</h1>
+    <p>Catchy names, clear durations, zero guesswork. Full day-by-day itineraries and pricing are shared directly on WhatsApp once you enquire.</p>
+    <div class="breadcrumb"><a href="index.html" style="color:#fff">Home</a><span>/</span><span>Tour Packages</span></div>
+  </div>
+</section>
+
+<!-- ===== Region Jump Nav ===== -->
+<nav class="region-nav" aria-label="Jump to region">
+  <div class="container">
+    <a href="#kashmir-ladakh">Kashmir &amp; Ladakh</a>
+    <a href="#himachal-uttarakhand">Himachal &amp; Uttarakhand</a>
+    <a href="#rajasthan-golden-triangle">Rajasthan &amp; Golden Triangle</a>
+    <a href="#kerala-south-india">Kerala &amp; South India</a>
+    <a href="#goa-andaman">Goa, Andaman &amp; Beaches</a>
+    <a href="#northeast-india">Northeast India</a>
+    <a href="#international">International</a>
+  </div>
+</nav>
+
+<!-- ===== Kashmir & Ladakh ===== -->
+<section class="region-section" id="kashmir-ladakh">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>Kashmir &amp; Ladakh</h2>
+        <p>Snow-capped valleys, Dal Lake houseboats and the high-altitude drama of Ladakh.</p>
+      </div>
+      <span class="region-count">4 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kashmir Valley Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kashmir Valley Escape</h3>
+          <p>Dal Lake shikaras, Gulmarg meadows and snow peaks in one easy trip.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Kashmir Valley Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Kashmir Grand Experience" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kashmir Grand Experience</h3>
+          <p>The complete Kashmir circuit — Srinagar, Gulmarg, Pahalgam &amp; Sonmarg.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Kashmir Grand Experience (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="Ladakh Himalayan Escape" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Ladakh Himalayan Escape</h3>
+          <p>Leh's monasteries, Pangong Lake blues and high-altitude thrills.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Ladakh Himalayan Escape (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80" alt="Ladakh Grand Himalayan Expedition" loading="lazy" />
+          <span class="pkg-duration">7N/8D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Ladakh Grand Himalayan Expedition</h3>
+          <p>Nubra Valley dunes, Khardung La and the full Ladakh adventure.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Ladakh Grand Himalayan Expedition (7N/8D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Himachal & Uttarakhand ===== -->
+<section class="region-section" id="himachal-uttarakhand">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>Himachal &amp; Uttarakhand</h2>
+        <p>Hill stations, snow adventures, sacred rivers and India's favourite mountain escapes.</p>
+      </div>
+      <span class="region-count">6 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Manali Snow & Adventure" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Manali Snow &amp; Adventure</h3>
+          <p>Solang Valley snow, Old Manali cafes and quick mountain thrills.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Manali Snow & Adventure (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80" alt="Shimla–Manali Himalayan Escape" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Shimla–Manali Himalayan Escape</h3>
+          <p>Colonial charm in Shimla meets snowy adventure in Manali.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Shimla–Manali Himalayan Escape (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Dharamshala–Dalhousie Himalayan Retreat" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Dharamshala–Dalhousie Himalayan Retreat</h3>
+          <p>Tibetan culture, pine forests and peaceful hill-town vibes.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Dharamshala–Dalhousie Himalayan Retreat (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffb?auto=format&fit=crop&w=800&q=80" alt="Spiti Valley Ultimate Expedition" loading="lazy" />
+          <span class="pkg-duration">6N/7D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Spiti Valley Ultimate Expedition</h3>
+          <p>Cold-desert landscapes, ancient monasteries and India's epic road trip.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Spiti Valley Ultimate Expedition (6N/7D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Mussoorie–Rishikesh Divine Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Mussoorie–Rishikesh Divine Escape</h3>
+          <p>Hill-station views meet Ganga aarti and river rafting thrills.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Mussoorie–Rishikesh Divine Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Nainital–Corbett Nature Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Nainital–Corbett Nature Escape</h3>
+          <p>Lakeside walks and wildlife safaris in one refreshing break.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Nainital–Corbett Nature Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Rajasthan & Golden Triangle ===== -->
+<section class="region-section" id="rajasthan-golden-triangle">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>Rajasthan &amp; Golden Triangle</h2>
+        <p>Forts, palaces, deserts and India's most iconic heritage circuit.</p>
+      </div>
+      <span class="region-count">3 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80" alt="Royal Rajasthan Escape" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Royal Rajasthan Escape</h3>
+          <p>Forts, palaces and desert charm on a quick royal getaway.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Royal Rajasthan Escape (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?auto=format&fit=crop&w=800&q=80" alt="Rajasthan Heritage Trail" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Rajasthan Heritage Trail</h3>
+          <p>Jaipur, Jodhpur &amp; Udaipur's best forts, lakes and bazaars.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Rajasthan Heritage Trail (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Rajasthan Grand Royal Tour" loading="lazy" />
+          <span class="pkg-duration">6N/7D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Rajasthan Grand Royal Tour</h3>
+          <p>The complete royal circuit — palaces, dunes and lake cities.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Rajasthan Grand Royal Tour (6N/7D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Kerala & South India ===== -->
+<section class="region-section" id="kerala-south-india">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>Kerala &amp; South India</h2>
+        <p>Backwaters, tea gardens, coffee estates and the calm of God's Own Country.</p>
+      </div>
+      <span class="region-count">6 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1602216056132-a53c2d0eda52?auto=format&fit=crop&w=800&q=80" alt="Kerala Quick Escape" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kerala Quick Escape</h3>
+          <p>A short, sweet dose of backwaters and hill-country greenery.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Kerala Quick Escape (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc32?auto=format&fit=crop&w=800&q=80" alt="Kerala Scenic Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kerala Scenic Escape</h3>
+          <p>Munnar's tea gardens and Alleppey's backwaters, beautifully paced.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Kerala Scenic Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala Backwater & Hills" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Kerala Backwater &amp; Hills</h3>
+          <p>Houseboat stays and misty tea gardens — God's Own Country.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Kerala Backwater & Hills (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc32?auto=format&fit=crop&w=800&q=80" alt="God's Own Kerala Experience" loading="lazy" />
+          <span class="pkg-duration">6N/7D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>God's Own Kerala Experience</h3>
+          <p>The full Kerala trail — hills, backwaters, beaches &amp; culture.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the God's Own Kerala Experience (6N/7D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Mysore–Coorg Green Escape" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Mysore–Coorg Green Escape</h3>
+          <p>Royal palaces and coffee plantation trails in the Western Ghats.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Mysore–Coorg Green Escape (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Ooty–Mysore–Coorg South India Escape" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Ooty–Mysore–Coorg South India Escape</h3>
+          <p>Hill stations, coffee estates and royal heritage combined.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Ooty–Mysore–Coorg South India Escape (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Goa, Andaman & Beaches ===== -->
+<section class="region-section" id="goa-andaman">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>Goa, Andaman &amp; Beaches</h2>
+        <p>Sun, sand and turquoise waters — India's best beach breaks.</p>
+      </div>
+      <span class="region-count">5 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa Beach Escape" loading="lazy" />
+          <span class="pkg-duration">2N/3D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Goa Beach Escape</h3>
+          <p>A quick beach fix — sun, sand and laid-back shack vibes.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Goa Beach Escape (2N/3D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="Goa Fun & Fiesta" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Goa Fun &amp; Fiesta</h3>
+          <p>Beaches, beach shacks and buzzing nightlife for the whole group.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Goa Fun & Fiesta (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa Ultimate Getaway" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Goa Ultimate Getaway</h3>
+          <p>North &amp; South Goa combined — water sports and sunset cafes.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Goa Ultimate Getaway (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80" alt="Andaman Island Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Andaman Island Escape</h3>
+          <p>Turquoise waters, coral reefs and island-hopping bliss.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Andaman Island Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Andaman Island Explorer" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Andaman Island Explorer</h3>
+          <p>The complete island trail — beaches, reefs and history.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Andaman Island Explorer (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Northeast India ===== -->
+<section class="region-section" id="northeast-india">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>Northeast India</h2>
+        <p>Misty hills, living root bridges and India's greenest, least-explored corner.</p>
+      </div>
+      <span class="region-count">4 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc32?auto=format&fit=crop&w=800&q=80" alt="Darjeeling–Gangtok Himalayan Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Darjeeling–Gangtok Himalayan Escape</h3>
+          <p>Tea gardens, monasteries and stunning Kanchenjunga views.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Darjeeling–Gangtok Himalayan Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=800&q=80" alt="Gangtok–Pelling–Darjeeling Himalayan Trail" loading="lazy" />
+          <span class="pkg-duration">6N/7D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Gangtok–Pelling–Darjeeling Himalayan Trail</h3>
+          <p>Sikkim's monasteries meet Darjeeling's misty tea estates.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Gangtok–Pelling–Darjeeling Himalayan Trail (6N/7D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=800&q=80" alt="Meghalaya Cloudland Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Meghalaya Cloudland Escape</h3>
+          <p>Living root bridges and waterfalls in the abode of clouds.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Meghalaya Cloudland Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Meghalaya–Kaziranga Wild & Green Escape" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Meghalaya–Kaziranga Wild &amp; Green Escape</h3>
+          <p>Rhino safaris and Meghalaya's lush green landscapes.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Meghalaya–Kaziranga Wild & Green Escape (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== International Destinations ===== -->
+<section class="region-section" id="international">
+  <div class="container">
+    <div class="region-section-head">
+      <div>
+        <h2>International Destinations</h2>
+        <p>Handpicked international escapes — visas, flights and stays sorted for you.</p>
+      </div>
+      <span class="region-count">7 Packages</span>
+    </div>
+    <div class="pkg-grid">
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai City & Desert Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Dubai City &amp; Desert Escape</h3>
+          <p>Skyline views, desert safaris and world-class shopping.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Dubai City & Desert Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Tropical Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Bali Tropical Escape</h3>
+          <p>Rice terraces, beach clubs and island temples in perfect balance.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Bali Tropical Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80" alt="Singapore City Escape" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Singapore City Escape</h3>
+          <p>Gardens, skyline views and a spotless city-break experience.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Singapore City Escape (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80" alt="Bangkok–Pattaya Fun Escape" loading="lazy" />
+          <span class="pkg-duration">4N/5D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Bangkok–Pattaya Fun Escape</h3>
+          <p>Temples, street food and beach fun on Thailand's best combo.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Bangkok–Pattaya Fun Escape (4N/5D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80" alt="Maldives Tropical Paradise" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Maldives Tropical Paradise</h3>
+          <p>Overwater villas and turquoise lagoons for the ultimate escape.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Maldives Tropical Paradise (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffb?auto=format&fit=crop&w=800&q=80" alt="Nepal Himalayan Escape" loading="lazy" />
+          <span class="pkg-duration">5N/6D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Nepal Himalayan Escape</h3>
+          <p>Kathmandu's temples and jaw-dropping Himalayan views.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Nepal Himalayan Escape (5N/6D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pkg-card reveal">
+        <div class="pkg-media">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffb?auto=format&fit=crop&w=800&q=80" alt="Bhutan Himalayan Escape" loading="lazy" />
+          <span class="pkg-duration">3N/4D</span>
+        </div>
+        <div class="pkg-body">
+          <h3>Bhutan Himalayan Escape</h3>
+          <p>Tiger's Nest monastery and the happiest kingdom in the Himalayas.</p>
+          <div class="pkg-actions">
+            <a href="#" class="btn btn-whatsapp btn-block" data-wa="Hi, I'm interested in the Bhutan Himalayan Escape (3N/4D) package. Please share full details.">Enquire on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA Banner ===== -->
+<section>
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Can't decide? Let's talk on WhatsApp.</h2>
+        <p>Tell us your dates, group size and budget vibe — we'll recommend the perfect package.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-light" data-wa="Hi Siona Tours! I'd like help choosing the right holiday package for my group.">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">ST</span>
+          <span class="logo-text">Siona Tours</span>
+        </a>
+        <p>Group tours and holiday packages across India's most loved destinations and select international escapes. Full itineraries shared on WhatsApp.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5H16.7V3.7C16.4 3.65 15.4 3.55 14.25 3.55c-2.4 0-4.05 1.47-4.05 4.15V9.9H7.5V13h2.7v8h3.3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15 4.9 4.9 0 0 1 1.15 1.77c.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33m0 2.16c-3.17 0-3.5.01-4.74.07-.98.04-1.5.21-1.86.34-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.13.36-.3.88-.34 1.86-.06 1.24-.07 1.57-.07 4.74s.01 3.5.07 4.74c.04.98.21 1.5.34 1.86.18.47.4.8.75 1.15s.68.57 1.15.75c.36.13.88.3 1.86.34 1.24.06 1.57.07 4.74.07s3.5-.01 4.74-.07c.98-.04 1.5-.21 1.86-.34.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.13-.36.3-.88.34-1.86.06-1.24.07-1.57.07-4.74s-.01-3.5-.07-4.74c-.04-.98-.21-1.5-.34-1.86a3.1 3.1 0 0 0-.75-1.15 3.1 3.1 0 0 0-1.15-.75c-.36-.13-.88-.3-1.86-.34-1.24-.06-1.57-.07-4.74-.07M12 6.87A5.13 5.13 0 1 1 6.87 12 5.13 5.13 0 0 1 12 6.87m0 2.16A2.97 2.97 0 1 0 14.97 12 2.97 2.97 0 0 0 12 9.03m6.4-2.4a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour-packages.html">Tour Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Popular Regions</h4>
+        <ul>
+          <li><a href="tour-packages.html#kashmir-ladakh">Kashmir &amp; Ladakh</a></li>
+          <li><a href="tour-packages.html#himachal-uttarakhand">Himachal &amp; Uttarakhand</a></li>
+          <li><a href="tour-packages.html#kerala-south-india">Kerala &amp; South India</a></li>
+          <li><a href="tour-packages.html#goa-andaman">Goa &amp; Andaman</a></li>
+          <li><a href="tour-packages.html#international">International</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3z" transform="scale(0.7)"/></svg>
+            <a href="#" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">+91 94047 35713 (WhatsApp)</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>India | Group Tours &amp; Holidays</span>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-whatsapp btn-sm btn-block" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages.">Chat With Us</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Siona Tours. All rights reserved.</span>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating WhatsApp Button ===== -->
+<a href="#" class="wa-float" data-wa="Hi Siona Tours! I'd like to enquire about your holiday packages." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.78 6.47L4 29l7.68-1.75a12.9 12.9 0 0 0 4.34.75h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 22a10 10 0 0 1-5.1-1.39l-.37-.22-4.56 1.04 1.07-4.44-.24-.38A9.94 9.94 0 0 1 6 15.02C6 9.5 10.5 5 16.02 5c5.5 0 10 4.5 10 10.02S21.52 25 16.02 25zm5.4-7.44c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script>
+  // Highlight active region pill on scroll
+  document.addEventListener("DOMContentLoaded", function () {
+    var sections = document.querySelectorAll(".region-section");
+    var navLinks = document.querySelectorAll(".region-nav a");
+    function setActive() {
+      var scrollPos = window.scrollY + 200;
+      sections.forEach(function (sec) {
+        if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+          navLinks.forEach(function (link) {
+            link.classList.toggle("active", link.getAttribute("href") === "#" + sec.id);
+          });
+        }
+      });
+    }
+    window.addEventListener("scroll", setActive);
+    setActive();
+  });
+</script>
+</body>
+</html>
